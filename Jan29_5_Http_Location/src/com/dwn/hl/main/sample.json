@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"is_end": true,
+		"total_count": 4,
+		"pageable_count": 4
+	},
+	"documents": [
+		{
+			"road_address": null,
+			"address_name": "\uacbd\uae30 \uace0\uc591\uc2dc \ub355\uc591\uad6c \ud589\uc2e0\ub3d9",
+			"address": {
+				"b_code": "4128112800",
+				"region_3depth_h_name": "",
+				"main_address_no": "",
+				"h_code": "",
+				"region_2depth_name": "\uace0\uc591\uc2dc \ub355\uc591\uad6c",
+				"main_adderss_no": "",
+				"sub_address_no": "",
+				"region_3depth_name": "\ud589\uc2e0\ub3d9",
+				"address_name": "\uacbd\uae30 \uace0\uc591\uc2dc \ub355\uc591\uad6c \ud589\uc2e0\ub3d9",
+				"y": "37.622355660669925",
+				"x": "126.83603717730612",
+				"mountain_yn": "N",
+				"zip_code": "",
+				"region_1depth_name": "\uacbd\uae30",
+				"sub_adderss_no": ""
+			},
+			"y": "37.622355660669925",
+			"x": "126.83603717730612",
+			"address_type": "REGION"
+		},
+		{
+			"road_address": null,
+			"address_name": "\uacbd\uae30 \uace0\uc591\uc2dc \ub355\uc591\uad6c \ud589\uc2e01\ub3d9",
+			"address": {
+				"b_code": "",
+				"region_3depth_h_name": "\ud589\uc2e01\ub3d9",
+				"main_address_no": "",
+				"h_code": "4128164000",
+				"region_2depth_name": "\uace0\uc591\uc2dc \ub355\uc591\uad6c",
+				"main_adderss_no": "",
+				"sub_address_no": "",
+				"region_3depth_name": "",
+				"address_name": "\uacbd\uae30 \uace0\uc591\uc2dc \ub355\uc591\uad6c \ud589\uc2e01\ub3d9",
+				"y": "37.62233025047358",
+				"x": "126.8359058346317",
+				"mountain_yn": "N",
+				"zip_code": "",
+				"region_1depth_name": "\uacbd\uae30",
+				"sub_adderss_no": ""
+			},
+			"y": "37.62233025047358",
+			"x": "126.8359058346317",
+			"address_type": "REGION"
+		},
+		{
+			"road_address": null,
+			"address_name": "\uacbd\uae30 \uace0\uc591\uc2dc \ub355\uc591\uad6c \ud589\uc2e02\ub3d9",
+			"address": {
+				"b_code": "",
+				"region_3depth_h_name": "\ud589\uc2e02\ub3d9",
+				"main_address_no": "",
+				"h_code": "4128165000",
+				"region_2depth_name": "\uace0\uc591\uc2dc \ub355\uc591\uad6c",
+				"main_adderss_no": "",
+				"sub_address_no": "",
+				"region_3depth_name": "",
+				"address_name": "\uacbd\uae30 \uace0\uc591\uc2dc \ub355\uc591\uad6c \ud589\uc2e02\ub3d9",
+				"y": "37.61513631614345",
+				"x": "126.83301303424834",
+				"mountain_yn": "N",
+				"zip_code": "",
+				"region_1depth_name": "\uacbd\uae30",
+				"sub_adderss_no": ""
+			},
+			"y": "37.61513631614345",
+			"x": "126.83301303424834",
+			"address_type": "REGION"
+		},
+		{
+			"road_address": null,
+			"address_name": "\uacbd\uae30 \uace0\uc591\uc2dc \ub355\uc591\uad6c \ud589\uc2e03\ub3d9",
+			"address": {
+				"b_code": "",
+				"region_3depth_h_name": "\ud589\uc2e03\ub3d9",
+				"main_address_no": "",
+				"h_code": "4128165500",
+				"region_2depth_name": "\uace0\uc591\uc2dc \ub355\uc591\uad6c",
+				"main_adderss_no": "",
+				"sub_address_no": "",
+				"region_3depth_name": "",
+				"address_name": "\uacbd\uae30 \uace0\uc591\uc2dc \ub355\uc591\uad6c \ud589\uc2e03\ub3d9",
+				"y": "37.626453296299324",
+				"x": "126.83861551052415",
+				"mountain_yn": "N",
+				"zip_code": "",
+				"region_1depth_name": "\uacbd\uae30",
+				"sub_adderss_no": ""
+			},
+			"y": "37.626453296299324",
+			"x": "126.83861551052415",
+			"address_type": "REGION"
+		}
+	]
+}
