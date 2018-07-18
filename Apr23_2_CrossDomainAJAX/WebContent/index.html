@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//alert("dfs");
+		// 가져오는 데이터가 JSON이면
+		// $.getJSON(주소, 콜백);
+		var url ="http://172.16.1.30/apr20_1_ja/student.getAllJSONP";
+		url += "?callback=?"; // jsonp 쓸 때 파라메터에 ?를 넣는다
+				
+		$.getJSON(url, function(json){
+			alert(json.student[0].s_name);
+			alert(json.student[1].s_name);
+			alert(json.student[2].s_name);
+			alert(json.student[3].s_name);
+			
+			alert(json.student[0].s_kor);
+			alert(json.student[1].s_kor);
+			alert(json.student[2].s_kor);
+			alert(json.student[3].s_kor);
+			
+		});	
+	});
+</script>
+</head>
+<body>
+
+</body>
+</html>
