@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dwm.apr16_1_pw.follow.FollowMapper">
+	<insert id="insertFollower" parameterType="com.dwm.apr16_1_pw.follow.Follow">
+		insert into wonsta_follow values(wonsta_follow_seq.nextval, #{wf_id}, #{wf_follower})
+	</insert>
+	<delete id="deleteFollower" parameterType="com.dwm.apr16_1_pw.follow.Follow">
+		delete from wonsta_follow where wf_id = #{wf_id} and wf_follower = #{wf_follower}
+	</delete>
+	<select id="followOrNot" resultType="com.dwm.apr16_1_pw.follow.Follow" parameterType="com.dwm.apr16_1_pw.follow.Follow">
+		select * from wonsta_follow where wf_id = #{wf_id} and wf_follower = #{wf_follower}
+	</select>
+	<select id="followerCnt" resultType="com.dwm.apr16_1_pw.follow.Follow" parameterType="com.dwm.apr16_1_pw.follow.Follow">
+		select * from wonsta_follow where wf_id = #{wf_id}
+	</select>
+	<select id="followCnt" resultType="com.dwm.apr16_1_pw.follow.Follow" parameterType="com.dwm.apr16_1_pw.follow.Follow">
+		select * from wonsta_follow where wf_follower = #{wf_follower}
+	</select>
+</mapper>

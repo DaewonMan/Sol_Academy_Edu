@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dwm.apr16_1_pw.post.PostMapper">
+	<insert id="addPost" parameterType="com.dwm.apr16_1_pw.post.Post">
+		insert into wonsta_posts values(wonsta_posts_seq.nextval, #{wp_id}, #{wp_title}, #{wp_hash}, sysdate, #{wp_img}, 0)
+	</insert>
+	<select id="searchPost" parameterType="com.dwm.apr16_1_pw.post.Post" resultType="com.dwm.apr16_1_pw.post.Post">
+		select * from wonsta_posts where wp_id = #{wp_id} order by wp_date desc
+	</select>
+	<select id="searchPostByNo" parameterType="com.dwm.apr16_1_pw.post.Post" resultType="com.dwm.apr16_1_pw.post.Post">
+		select * from wonsta_posts where wp_no = #{wp_no}
+	</select>
+	<select id="searchPostByNo2" parameterType="com.dwm.apr16_1_pw.post.Post" resultType="com.dwm.apr16_1_pw.post.Post">
+		select * from wonsta_posts where wp_no = #{wp_no}
+	</select>
+	<select id="searchPostByNo3" parameterType="com.dwm.apr16_1_pw.post.Post" resultType="com.dwm.apr16_1_pw.post.Post">
+		select * from wonsta_posts where wp_no = #{wp_no}
+	</select>
+	<insert id="insertReple" parameterType="com.dwm.apr16_1_pw.post.Reple">
+		insert into wonsta_reple values(wonsta_reple_seq.nextval, #{wr_id}, #{wr_rno}, #{wr_reple})
+	</insert>
+	<select id="searchRepleByRNo" parameterType="com.dwm.apr16_1_pw.post.Reple" resultType="com.dwm.apr16_1_pw.post.Reple">
+		select * from wonsta_reple where wr_rno = #{wr_rno} order by wr_no desc
+	</select>
+	<select id="searchRepleByRNo2" parameterType="com.dwm.apr16_1_pw.post.Reple" resultType="com.dwm.apr16_1_pw.post.Reple">
+		select * from wonsta_reple where wr_rno = #{wr_rno}
+	</select>
+	<delete id="deleteRepleByNo" parameterType="com.dwm.apr16_1_pw.post.Reple">
+		delete from wonsta_reple where wr_no = #{wr_no}
+	</delete>
+	<delete id="deleteRepleByRno" parameterType="com.dwm.apr16_1_pw.post.Reple">
+		delete from wonsta_reple where wr_rno = #{wr_rno}
+	</delete>
+	<delete id="deletePostByNo" parameterType="com.dwm.apr16_1_pw.post.Post">
+		delete from wonsta_posts where wp_no = #{wp_no}
+	</delete>
+	<update id="updateLikeByNo" parameterType="com.dwm.apr16_1_pw.post.Post">
+		update wonsta_posts set wp_like = wp_like + #{wp_like} where wp_no = #{wp_no}
+	</update>
+	
+	<insert id="insertLikeBoolById" parameterType="com.dwm.apr16_1_pw.post.LikeBool">
+		insert into wonsta_like_bool values(wonsta_like_bool_seq.nextval, #{wlb_id}, #{wlb_bool}, #{wlb_pno})
+	</insert>
+	<update id="updateLikeBoolByIdPno" parameterType="com.dwm.apr16_1_pw.post.LikeBool">
+		update wonsta_like_bool set wlb_bool = #{wlb_bool} where wlb_id = #{wlb_id} and wlb_pno = #{wlb_pno}
+	</update>
+	<select id="searchLikeBoolByIdPno" parameterType="com.dwm.apr16_1_pw.post.LikeBool" resultType="com.dwm.apr16_1_pw.post.LikeBool">
+		select * from wonsta_like_bool where wlb_id = #{wlb_id} and wlb_pno = #{wlb_pno}
+	</select>
+	<delete id="deleteLikeBoolByPno" parameterType="com.dwm.apr16_1_pw.post.LikeBool">
+		delete from wonsta_like_bool where wlb_pno = #{wlb_pno}
+	</delete>
+</mapper>

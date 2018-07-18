@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dwm.apr16_1_pw.waiter.WaiterMapper">
+	<insert id="insertWaiter" parameterType="com.dwm.apr16_1_pw.waiter.Waiter">
+		insert into wonsta_follow_wait values(wonsta_follow_wait_seq.nextval, #{wfw_id}, #{wfw_follower})
+	</insert>
+	<delete id="deleteWaiter" parameterType="com.dwm.apr16_1_pw.waiter.Waiter">
+		delete from wonsta_follow_wait where wfw_id = #{wfw_id} and wfw_follower = #{wfw_follower}
+	</delete>
+	<select id="followWaitOrNot" parameterType="com.dwm.apr16_1_pw.waiter.Waiter" resultType="com.dwm.apr16_1_pw.waiter.Waiter">
+		select * from wonsta_follow_wait where wfw_id = #{wfw_id} and wfw_follower = #{wfw_follower}
+	</select>
+	<select id="countWaitForMe" parameterType="com.dwm.apr16_1_pw.waiter.Waiter" resultType="com.dwm.apr16_1_pw.waiter.Waiter">
+		select * from wonsta_follow_wait where wfw_id = #{wfw_id}
+	</select>
+</mapper>
